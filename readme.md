@@ -10,7 +10,7 @@ $ npm install
   Start the server:
 
 ```bash
-$ npm start
+$ npm run start-dev
 ```
   View the website at: http://localhost:3000
 
