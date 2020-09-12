@@ -46,6 +46,15 @@ $ http://localhost:3000/apis/restaurants/:id
     "type": "Partner, Small Bites/Snacks"
   }
 ```  
+  PATCH:
+```bash
+$ http://localhost:3000/apis/restaurants/:id
+
+  Example data
+  {
+    "name": "ไอติมทอด PATCH",
+  }
+``` 
   DELETE:
 ```bash
 $ http://localhost:3000/apis/restaurants/:id
