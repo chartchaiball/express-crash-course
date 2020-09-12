@@ -28,11 +28,27 @@ $ http://localhost:3000/apis/restaurants/:id
 ```bash
 $ http://localhost:3000/apis/restaurants
 
+Example data
   {
     "name": "ไอติมทอด",
-    "imageURL":
-      "https://d1sag4ddilekf6.cloudfront.net/compressed/merchants/3-CZNTJCKZEF3WE2/hero/3506e7a5051f4a8ebddf03a1a6f610fc_1599813799805006784.jpeg",
+    "imageURL":"https://d1sag4ddilekf6.cloudfront.net/compressed/merchants/3-CZNTJCKZEF3WE2/hero/3506e7a5051f4a8ebddf03a1a6f610fc_1599813799805006784.jpeg",
+    "type": "Partner, Small Bites/Snacks"
+  }
+```
+  PUT:
+```bash
+$ http://localhost:3000/apis/restaurants/:id
+
+  Example data
+  {
+    "name": "ไอติมทอด PUT",
+    "imageURL":"https://d1sag4ddilekf6.cloudfront.net/compressed/merchants/3-CZNTJCKZEF3WE2/hero/3506e7a5051f4a8ebddf03a1a6f610fc_1599813799805006784.jpeg",
     "type": "Partner, Small Bites/Snacks"
   }
 ```  
+  DELETE:
+```bash
+$ http://localhost:3000/apis/restaurants/:id
+```  
+
    
