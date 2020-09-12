@@ -32,8 +32,23 @@ router.put("/:id", (req, res) => {
     (restaurant) => restaurant.id === restaurantId
   );
   const updatedRestaurant = {
-    id: restaurantId,
+    ...restaurants[resraurantIndex],
     ...req.body,
+    id: restaurants[resraurantIndex].id,
+  };
+  restaurants[resraurantIndex] = updatedRestaurant;
+  res.json(updatedRestaurant);
+});
+
+router.patch("/:id", (req, res) => {
+  const restaurantId = Number.parseInt(req.params.id, 10);
+  const resraurantIndex = restaurants.findIndex(
+    (restaurant) => restaurant.id === restaurantId
+  );
+  const updatedRestaurant = {
+    ...restaurants[resraurantIndex],
+    ...req.body,
+    id: restaurants[resraurantIndex].id,
   };
   restaurants[resraurantIndex] = updatedRestaurant;
   res.json(updatedRestaurant);
