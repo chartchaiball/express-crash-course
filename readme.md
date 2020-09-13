@@ -12,7 +12,7 @@ $ npm install
 ```bash
 $ npm run start-dev
 ```
-  View the website at: http://localhost:3000
+  View the website at: http://localhost:8000
 
 ## Examples api
 
